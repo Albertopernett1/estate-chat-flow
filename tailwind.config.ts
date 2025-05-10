@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,19 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Estate Chat Colors
+				estate: {
+					purple: '#9b87f5',
+					'dark-purple': '#7E69AB',
+					'light-purple': '#D6BCFA',
+					'dark-gray': '#222222',
+					'light-gray': '#F5F7FA',
+					'neutral-gray': '#8E9196',
+					'label-blue': '#5B93FF',
+					'label-yellow': '#FFB946',
+					'label-green': '#2ED47A',
+					'label-red': '#F7685B',
 				}
 			},
 			borderRadius: {
@@ -89,7 +103,10 @@ export default {
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+			},
+			fontFamily: {
+				'inter': ['Inter', 'sans-serif'],
+			},
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
