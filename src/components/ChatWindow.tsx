@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { 
   Send, 
@@ -114,7 +113,7 @@ const ChatWindow = ({ selectedContactId }: ChatWindowProps) => {
       channelType: undefined,
       attachments: [
         {
-          type: "document",
+          type: "document" as const,
           name: "Presentation.pdf",
           size: "2.5 MB",
         }
